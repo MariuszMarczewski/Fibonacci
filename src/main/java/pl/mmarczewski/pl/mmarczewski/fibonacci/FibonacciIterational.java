@@ -9,15 +9,15 @@ public class FibonacciIterational implements Fibonacci {
 
         validateArgument(n);
 
-        BigDecimal result = new BigDecimal(0);
+        BigDecimal result1 = new BigDecimal(0);
 
         BigDecimal prev = new BigDecimal(1);
         for(int i = 1; i <= n; i++){
-            BigDecimal temp = result;
-            result = result.add(prev);
+            BigDecimal temp = result1;
+            result1 = result1.add(prev);
             prev = temp;
         }
 
-        return result;
+        return result1;
     }
 }
